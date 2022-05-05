@@ -6,8 +6,8 @@ for i in ${file_path};
 do
 
 file_name=$(echo -n ${i} | cut -d '/' -f 4)
-match_path=$(find ${i} -type f -name ${file_name}.md)
-dir_path=$(echo -n ${match_path} | cut -d '/' -f 5 --complement)
+match_path=$(find ${i} -type f -name "${file_name}.md")
+dir_path=$(echo -n "${match_path}" | cut -d '/' -f 5 --complement)
 
 #echo ${file_name}
 #echo ${match_path}
